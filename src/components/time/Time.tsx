@@ -12,6 +12,7 @@ interface ITime {
 
 const formatTimeHoursMinutes = (min: number): string => {
     const hours = Math.floor(min / 60);
+    // const minTail = min % 60 
     const formattedHours = hours.toString().padStart(2, '0');
     const formattedMinutes = min.toString().padStart(2, '0');
 
